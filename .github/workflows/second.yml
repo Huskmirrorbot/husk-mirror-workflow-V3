@@ -84,7 +84,7 @@ jobs:
           
   # 3rd Job for looping the workflow after job 3 & 4 completes
   looper:
-    needs: [bot-3, bot-4]
+    needs: [bot-1, bot-2]
     runs-on: ubuntu-latest
 
     steps:
